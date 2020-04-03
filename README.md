@@ -27,7 +27,7 @@ localhost:8080/swagger-ui.html
 
 ### 2.3 使用gitbook在线查看数据文档
 
-确保安装了gitbook后，进入上述文件目录的命令行窗口运行：gitbook serve
+确保安装了gitbook后，进入上述文件目录的命令行窗口运行：gitbook serve --lrport 35288 --port 4001
 
 ```bash
 Live reload server started on port: 35729
@@ -46,17 +46,11 @@ info: found 0 asset files
 info: >> generation finished with success in 0.9s ! 
 
 Starting server ...
-Serving book on http://localhost:4000
+Serving book on http://localhost:4001
 ```
 
-访问 http://localhost:4000 ，即可在线查看数据库文档
+访问 http://localhost:4001 ，即可在线查看数据库文档
 
-如果遇到 You already have a server listening on 35729 错误信息，使用以下命令解决
-
-```
-sudo lsof -i :35729
-kill 查到的pid即可
-```
 
 ![](https://raw.githubusercontent.com/gaohanghang/images/master/img20190607200945.png)
 
